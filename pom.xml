@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>co.cask.wrangler</groupId>
-  <artifactId>image-exif</artifactId>
+  <artifactId>image-exif-directives</artifactId>
   <name>UDDs to process images to extract infromation from images.</name>
   <version>1.0.0</version>
   <packaging>jar</packaging>
