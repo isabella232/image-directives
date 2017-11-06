@@ -14,7 +14,7 @@
  *  the License.
  */
 
-package org.example.directives;
+package co.cask.directives;
 
 import co.cask.cdap.api.annotation.Description;
 import co.cask.cdap.api.annotation.Name;

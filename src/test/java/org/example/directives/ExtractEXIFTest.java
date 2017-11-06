@@ -16,6 +16,7 @@
 
 package org.example.directives;
 
+import co.cask.directives.ExtractEXIF;
 import co.cask.wrangler.api.RecipePipeline;
 import co.cask.wrangler.api.Row;
 import co.cask.wrangler.test.TestingRig;
