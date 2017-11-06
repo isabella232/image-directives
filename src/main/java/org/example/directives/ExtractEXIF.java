@@ -54,14 +54,14 @@ public final class ExtractEXIF implements Directive {
   public UsageDefinition define() {
     // Usage : exif :binary-image-column;
     UsageDefinition.Builder builder = UsageDefinition.builder(DIRECTIVE_NAME);
-    builder.define("binaryImageColumn", TokenType.COLUMN_NAME);
+    builder.define("image-column", TokenType.COLUMN_NAME);
     return builder.build();
   }
 
   @Override
   public void initialize(Arguments args)
     throws DirectiveParseException {
-    sourceColumn = ((ColumnName) args.value("binaryImageColumn")).value();
+    sourceColumn = ((ColumnName) args.value("image-column")).value();
   }
 
   @Override
