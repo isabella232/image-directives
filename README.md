@@ -1,4 +1,12 @@
-# Introduction
+# Image Directives
+
+[![cm-available](https://cdap-users.herokuapp.com/assets/cm-available.svg)](https://docs.cask.co/cdap/current/en/integrations/cask-market.html)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Join CDAP community](https://cdap-users.herokuapp.com/badge.svg?t=wrangler)](https://cdap-users.herokuapp.com?t=1)
+
+A set of directives to allow users to work with images.
+
+## Introduction
 
 CDAP provides extensive support for user defined directives (UDDs) as a way to specify custom processing for DataPrep in CDAP. CDAP UDDs can currently be implemented in Java.
 
