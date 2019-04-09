@@ -7,7 +7,7 @@
   <groupId>io.cdap.wrangler</groupId>
   <artifactId>image-exif-directives</artifactId>
   <name>UDDs to process images to extract infromation from images.</name>
-  <version>1.2.0</version>
+  <version>1.3.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
