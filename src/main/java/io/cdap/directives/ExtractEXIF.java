@@ -1,5 +1,5 @@
 /*
- *  Copyright © 2017 Cask Data, Inc.
+ *  Copyright © 2019 CDAP
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
  *  use this file except in compliance with the License. You may obtain a copy of
@@ -14,25 +14,25 @@
  *  the License.
  */
 
-package co.cask.directives;
+package io.cdap.directives;
 
-import co.cask.cdap.api.annotation.Description;
-import co.cask.cdap.api.annotation.Name;
-import co.cask.cdap.api.annotation.Plugin;
-import co.cask.wrangler.api.Arguments;
-import co.cask.wrangler.api.Directive;
-import co.cask.wrangler.api.DirectiveExecutionException;
-import co.cask.wrangler.api.DirectiveParseException;
-import co.cask.wrangler.api.ErrorRowException;
-import co.cask.wrangler.api.ExecutorContext;
-import co.cask.wrangler.api.Row;
-import co.cask.wrangler.api.parser.ColumnName;
-import co.cask.wrangler.api.parser.TokenType;
-import co.cask.wrangler.api.parser.UsageDefinition;
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.metadata.Directory;
 import com.drew.metadata.Metadata;
 import com.drew.metadata.Tag;
+import io.cdap.cdap.api.annotation.Description;
+import io.cdap.cdap.api.annotation.Name;
+import io.cdap.cdap.api.annotation.Plugin;
+import io.cdap.wrangler.api.Arguments;
+import io.cdap.wrangler.api.Directive;
+import io.cdap.wrangler.api.DirectiveExecutionException;
+import io.cdap.wrangler.api.DirectiveParseException;
+import io.cdap.wrangler.api.ErrorRowException;
+import io.cdap.wrangler.api.ExecutorContext;
+import io.cdap.wrangler.api.Row;
+import io.cdap.wrangler.api.parser.ColumnName;
+import io.cdap.wrangler.api.parser.TokenType;
+import io.cdap.wrangler.api.parser.UsageDefinition;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;
@@ -41,7 +41,7 @@ import java.util.List;
  * This class <code>ExtractEXIF</code>implements a <code>Directive</code> interface
  * for reversing the text specified by the value of the <code>column</code>.
  */
-@Plugin(type = Directive.Type)
+@Plugin(type = Directive.TYPE)
 @Name(ExtractEXIF.DIRECTIVE_NAME)
 @Description(ExtractEXIF.DIRECTIVE_DESC)
 public final class ExtractEXIF implements Directive {

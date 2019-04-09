@@ -1,5 +1,5 @@
 /*
- *  Copyright © 2017 Cask Data, Inc.
+ *  Copyright © 2019 CDAP
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not
  *  use this file except in compliance with the License. You may obtain a copy of
@@ -14,14 +14,14 @@
  *  the License.
  */
 
-package org.example.directives;
+package io.cdap.directive;
 
-import co.cask.directives.ExtractEXIF;
-import co.cask.wrangler.api.RecipePipeline;
-import co.cask.wrangler.api.Row;
-import co.cask.wrangler.test.TestingRig;
-import co.cask.wrangler.test.api.TestRecipe;
-import co.cask.wrangler.test.api.TestRows;
+import io.cdap.directives.ExtractEXIF;
+import io.cdap.wrangler.api.RecipePipeline;
+import io.cdap.wrangler.api.Row;
+import io.cdap.wrangler.test.TestingRig;
+import io.cdap.wrangler.test.api.TestRecipe;
+import io.cdap.wrangler.test.api.TestRows;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

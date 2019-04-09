@@ -4,18 +4,38 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>co.cask.wrangler</groupId>
+  <groupId>io.cdap.wrangler</groupId>
   <artifactId>image-exif-directives</artifactId>
   <name>UDDs to process images to extract infromation from images.</name>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
   <packaging>jar</packaging>
 
   <properties>
-    <cdap.version>5.1.2</cdap.version>
-    <wrangler.version>3.2.2</wrangler.version>
+    <cdap.version>6.0.0-SNAPSHOT</cdap.version>
+    <wrangler.version>4.0.0</wrangler.version>
     <commons.codec.version>1.10</commons.codec.version>
     <junit.version>4.12</junit.version>
   </properties>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>CDAP</name>
+      <email>cdap-dev@googlegroups.com</email>
+      <organization>CDAP</organization>
+      <organizationUrl>http://cdap.io</organizationUrl>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <url>https://issues.cask.co/browse/CDAP</url>
+  </issueManagement>
 
   <distributionManagement>
     <repository>
@@ -33,19 +53,19 @@
     <!-- Core Dependencies -->
 
     <dependency>
-      <groupId>co.cask.wrangler</groupId>
+      <groupId>io.cdap.wrangler</groupId>
       <artifactId>wrangler-api</artifactId>
       <version>${wrangler.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>co.cask.cdap</groupId>
+      <groupId>io.cdap.cdap</groupId>
       <artifactId>cdap-api</artifactId>
       <version>${cdap.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>co.cask.cdap</groupId>
+      <groupId>io.cdap.cdap</groupId>
       <artifactId>cdap-etl-api</artifactId>
       <version>${cdap.version}</version>
       <scope>provided</scope>
@@ -67,7 +87,7 @@
 
     <!-- Testing Dependencies -->
     <dependency>
-      <groupId>co.cask.wrangler</groupId>
+      <groupId>io.cdap.wrangler</groupId>
       <artifactId>wrangler-test</artifactId>
       <version>${wrangler.version}</version>
       <scope>test</scope>
@@ -104,7 +124,7 @@
               <Embed-Transitive>true</Embed-Transitive>
               <!-- Embed-Directory>lib</Embed-Directory -->
               <!--Only @Plugin classes in the export packages will be included as plugin-->
-              <_exportcontents>co.cask.directives.*</_exportcontents>
+              <_exportcontents>io.cdap.directives.*</_exportcontents>
             </instructions>
           </configuration>
           <executions>
@@ -134,12 +154,12 @@
         <artifactId>maven-antrun-plugin</artifactId>
       </plugin>
         <plugin>
-          <groupId>co.cask</groupId>
+          <groupId>io.cdap</groupId>
           <artifactId>cdap-maven-plugin</artifactId>
-          <version>1.0.1</version>
+          <version>1.1.0</version>
           <configuration>
             <cdapArtifacts>
-              <parent>system:wrangler-transform[1.0.0-SNAPSHOT, 4.0.0-SNAPSHOT)</parent>
+              <parent>system:wrangler-transform[4.0.0-SNAPSHOT, 5.0.0-SNAPSHOT)</parent>
             </cdapArtifacts>
           </configuration>
           <executions>
