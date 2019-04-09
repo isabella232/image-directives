@@ -1,6 +1,6 @@
 # Image Directives
 
-[![cm-available](https://cdap-users.herokuapp.com/assets/cm-available.svg)](https://docs.cask.co/cdap/current/en/integrations/cask-market.html)
+[![cm-available](https://cdap-users.herokuapp.com/assets/cm-available.svg)](https://docs.cdap.io/cdap/current/en/integrations/cask-market.html)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Join CDAP community](https://cdap-users.herokuapp.com/badge.svg?t=wrangler)](https://cdap-users.herokuapp.com?t=1)
 
@@ -20,7 +20,7 @@ Developing CDAP DataPrep UDDs is by no means any rocket science, and is an effec
 
 ## Developing UDD
 
-There is one simple interface for developing your customized directive. The simple interface `co.cask.wrangler.api.Directive` can be used for developing user defined directive.
+There is one simple interface for developing your customized directive. The simple interface `io.cdap.wrangler.api.Directive` can be used for developing user defined directive.
 
 ### Simple API
 
